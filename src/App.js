@@ -6,7 +6,16 @@ function App() {
 
   useEffect(() => {
     (async function () {
-      const { text } = await (await fetch(`/api/message`, { name: 'Zarra' })).json();
+      const { text } = await (await fetch(`/api/message`, {
+        method: 'POST',
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          name: 'Zarra'
+        })
+      }
+      )).json();
       setData(text);
     })();
   });

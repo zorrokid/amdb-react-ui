@@ -4,11 +4,17 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Running locally
+
     cd api
     npm run build
     cd ..
     npm run build
     swa start build --api-location api
+
+# Add CosmosDB
+
+https://docs.microsoft.com/en-us/azure/azure-functions/functions-add-output-binding-cosmos-db-vs-code?tabs=in-process&pivots=programming-language-javascript
 
 # problems
 
